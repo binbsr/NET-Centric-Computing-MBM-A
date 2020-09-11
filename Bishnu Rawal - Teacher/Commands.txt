@@ -1,0 +1,6 @@
+-Create container folder e.g. MBM-A
+-Goto terminal and cd to MBM-A
+-dotnet new console --name CSharpBasics
+-cd CSharpBasics
+-dotnet build
+-dotnet run
