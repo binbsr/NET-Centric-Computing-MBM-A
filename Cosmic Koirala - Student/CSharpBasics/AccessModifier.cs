@@ -1,5 +1,3 @@
-using EnumsAndProperties;
-
 public class AccessModifier
 {
     internal void DoSomething()
@@ -7,7 +5,7 @@ public class AccessModifier
 
     }
 
-    public void DoAnotherThing()
+    void DOAnotherThing()
     {
         DoSomething();
     }
@@ -15,10 +13,10 @@ public class AccessModifier
 
 class ModifierDemo
 {
-    void DoSomething()
+    void DOSomething()
     {
         Person person = new Person();
-        person.Age = 34;
-        person.Age = 45;
+        person.Age=34;
     }
+
 }
