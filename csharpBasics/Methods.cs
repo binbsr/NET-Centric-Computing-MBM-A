@@ -1,89 +1,112 @@
 using System;
+using EnumsAndProperties;
 
-public class MethodTeacher
+public class MethodLearner
 {
+    // static void Main()
+    // {
+    //     MethodLearner methodLearner = new MethodLearner();
+    //     double sum = methodLearner.Sum(2345.443, 4373.67);
+    //     Console.WriteLine($"Sum is {sum}");
+    // }
 
-    static void Main1()
+    //Simple method: with 2 arguments and a return type
+    public double Sum(double firstNum, double secondNum)
     {
-        MethodTeacher methodteacher =new MethodTeacher();
-       double Sum= methodteacher.Sum(2344.56,5634.98);
-       int[] numbers = {1,2,3,4,5,6};
-        int sum= Sumofeven1(numbers);
-       Console.WriteLine($"The sum is {sum}");
+        DayWeek x; 
+        return firstNum + secondNum;
     }
 
-    //simple method :with 2 aruments and return type
-    public double Sum(double firstnum,double secondnum)
+    //Variable-number of arguments 
+    public double Sum(params double[] numbers)
     {
-
-        return firstnum +secondnum;
+        double sum = 0;
+        foreach (double num in numbers)
+        {
+            sum = sum + num;
+        }
+        return sum;
     }
-    
-//method with many arguments
-   public static int Sumofeven1(params int[] nums)
-   {
-     int sum=0;
-    foreach(int num in nums)
-    {
-        if (num%2==0)
-        sum =sum+num;
-    }
-   return sum;
-   }
-//generic method
- public void   Sum <T> (T firstNum ,T secondNum){
- 
-{
- 
-        methodTeacher.Sum<float>(345.34f,4352.34f);
 
-  double Sum(params double[] numbers)
-   {
-       double sum=0;
-       foreach(double num in numbers)
-       {
-           sum= sum+num;
-       }
-       return sum;
-   }
-
-   //returning multiple value - using tuples
-   //example : method to find min and max from the set of numbers
-    (int,int) FindMinMax( int[] numbers)
+    // Returning multiple value - Using tuples
+    // Example: Method to find min and max from set of numbers.
+    internal (int, int) FindMinMax(int[] numbers)
     {
-        int min=numbers[0];
-        int max=numbers[0];
+        int min = numbers[0];
+        int max = numbers[0];
+
         foreach(int num in numbers)
         {
-            if (num <min)
-            min =num;
-            if (num >max)
-            max=num;
+            if (num < min)
+                min = num;
+            if (num > max)
+                max = num;
         }
-        return (min,max);
+
+        return (min, max);
     }
 
-
-void PrintCoustomerDetails(string name,byte age,string address)
+    //Named-arguments
+    internal void PrintCustomerDetails(string name, byte age, string address)
     {
-        Console.Write($"Name: {name}[{Age}],Address: {address}");
-    }
-   public  class MethodTester
-    {
-
-        static void Main()
-        {
-            MethodTeacher methodteacher =new MethodTeacher();
-            int[] numbers ={ 34,5,6,7,8,9,12};
-         ( int Min,int Max)result=  methodteacher.FindMinMax(numbers);
-
-
-         Console.WriteLine($"Min :{result.Min},Max:{result.Max}");
-
-        }
-        methodtester.PrintCoustomerDetails (age :32 ,address:"Naikap", name:"Koka");
-        methodteacher.Sum<float> (345.6f,34.56f);
+        Console.WriteLine($"Name: {name}[{age}], Address: {address}");
     }
 
-
+    // Generic Methods
+    public void Sum<T>(T firstNum, T secondNum)
+    {}
 }
+
+public class MethodTester
+{
+    static void Main()
+    {
+        MethodLearner methodLearner = new MethodLearner();
+        
+        int[] numbers = {34,5,26,37,31,43,64,32};
+        (int Min, int Max) result = methodLearner.FindMinMax(numbers);
+
+        Console.WriteLine($"Minimum: {result.Min}, Maximum: {result.Max}");
+        
+        // Named-arguments
+        methodLearner.PrintCustomerDetails(age: 21, address: "Lalitpur", name: "Sandhya");
+
+        // methodLearner.Sum<float>(345.34f, 3456.34f);
+    }
+}
+
+
+    
+    
+    // Question 1 : Return SUM of even numbers from supplied 6 integer numbers
+
+    // public int SumEvens(int a, int b, int c, int d, int e, int f)
+    // { 
+    //     int sum = 0;
+    //     if (a % 2 == 0)
+    //         sum = sum + a;
+    //     if (b % 2 == 0)
+    //         sum = sum + b;
+    //     if (c % 2 == 0)
+    //         sum = sum + c;
+    //     if (d % 2 == 0)
+    //         sum = sum + d;
+    //     if (e % 2 == 0)
+    //         sum = sum + e;
+    //     if (f % 2 == 0)
+    //         sum = sum + f;
+        
+    //     return sum;
+    // }
+
+//     public int SumEvens( params int[] nums)
+//     {
+//         int sum = 0;
+
+//         foreach (int num in nums)
+//         {
+//             if (num % 2 == 0)
+//                 sum = sum + num;
+//         }
+//         return sum;
+//     }
