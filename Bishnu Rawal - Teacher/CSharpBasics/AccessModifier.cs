@@ -1,3 +1,5 @@
+using EnumsAndProperties;
+
 public class AccessModifier
 {
     internal void DoSomething()
