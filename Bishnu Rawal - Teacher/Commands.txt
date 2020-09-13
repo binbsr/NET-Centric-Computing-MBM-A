@@ -4,3 +4,10 @@
 -cd CSharpBasics
 -dotnet build
 -dotnet run
+
+
+Git Commands
+> git clone repo-url
+> git add .
+> git commit -m "Added/modifed something"
+> git push
