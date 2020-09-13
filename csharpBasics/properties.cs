@@ -1,27 +1,33 @@
 using System;
 
-internal class Person
+namespace EnumsAndProperties
 {
-   private byte age;
-   private int grade;
-   public string name;
-   private  DateTime dob;
+    internal class Person
+    {
+        public byte age;
+        private int grade;
+        private DateTime dob;
 
-   public byte Age
-   {
-       get{return age ;}
-       set
-       {
-           if(value> 30 && value <40)
-           {
-               age= value;
-           }
-       }
-   }
+        // getter-setter
+        public byte Age
+        {
+            get { return age; }
+            set
+            {
+                if (value > 30 && value < 40)
+                {
+                    age = value;
+                }
+            }
+        }
 
-   //Auto implemented properties
-   public string Address {get ; set;}
+        // Auto-implemented properties
+        public string Address { get; set; }
 
-   //Read- only
-   public string Name { get; }
+        // Read-only
+        public string Name { get; }
+
+
+    }
+
 }

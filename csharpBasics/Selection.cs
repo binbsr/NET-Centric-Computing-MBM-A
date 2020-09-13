@@ -1,49 +1,53 @@
-using System;
+// using System;
+// class SelectionStatement
+// {
+//     static void Main2()
+//     {
+//         SelectionStatement ss = new SelectionStatement();
+//         ss.LearnIfElse();
+//     }
 
-class SelectionStatement
-{
-    static void Main4()
-    {
-        SelectionStatement ss =new SelectionStatement();
-        ss.LearnIfElse();
-    }
+//     void LearnIfElse()
+//     {
+//         Console.WriteLine("Enneter any number: ");
+//         string input =  Console.ReadLine();
+//         byte x = byte.Parse(input);
 
-    void LearnIfElse()
-    {
-     Console.Write("Enter any number: ");
-        string input = Console.ReadLine();
-        byte x = byte.Parse(input);
- 
-        if(x == 34)
-        {
-            Console.WriteLine("You did enter 34");
-        }
-        else if(x == 20)
-        {
-            Console.WriteLine("You enteres 20");
-        }
-        else{
-            Console.WriteLine("You didnt enter 34 and 20");
-        }
-    }
-    void LearnSwitch()
-    {
-        char option = 'y';
-        switch(option)
-        {
-            case 'n':
-            case 'y':
-            Console.WriteLine("You optioned for no");
-            break;
+//         if(x ==34)
+//         {
+//             Console.WriteLine("I am inside IF statement");
+//         }
+//         else
+//         {
+//             Console.WriteLine("You didnt enter 34");
+//         }
 
-            case 'z':
-            case 'k':
-             Console.WriteLine("You optioned for Yes");
-            break;
+//         void LearnSwitch()
+//         {
+//             char option = 'y';
 
-            default:
-             Console.WriteLine("Now you fcked up");
-            break;
-        }
-    }
-}
+//             switch(option)
+//             {
+//                 case 'n':
+//                 Console.WriteLine("You opted for NO.");
+//                 break;
+
+//                 case 'y':
+//                 Console.WriteLine("You opted for YES.");
+//                 break;
+
+//                 case 'x':
+//                 Console.WriteLine("You opted for No.");
+//                 break;
+
+//                 case 'z':
+//                 Console.WriteLine("You opted for YES.");
+//                 break;
+
+//                 default:
+//                 Console.WriteLine("No cases matched.");
+//                 break;
+//             }
+//         }
+//     }
+// }
