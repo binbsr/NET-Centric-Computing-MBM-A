@@ -5,7 +5,7 @@ namespace AllAboutClasses
         public string Name { get; set;}
         public int Population { get; set; }
 
-        public readonly double AREA = 45678.23;;
+        public readonly double AREA = 45678.23;
         public Country()
         {
 
