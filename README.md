@@ -5,10 +5,16 @@ In this course, we will be studying about theoretical foundation as well as its 
 ## Before we begin
 - [x] Please make sure *Git for Windows* is installed on your laptop thereafter you can use regular cmd or git bash to run git commands.
 - [x] Clone the repository to your laptop (on some relevent folder): ```git clone https://github.com/binbsr/NET-Centric-Computing-MBM-A.git```
+-[x] Under root folder (NET-Centric-Computing-MBM-A) just cloned, create folder called **Your Name - Student**
+- [x] Create a text file *readme.txt* with in **Your Name - Student** folder and modify it with your MBM credentials:  Your name MBM credentails
+- [x] Push your changes to the repo.
+- [x] There on, create your projects/files/folders on your directory only, to avoid conflicts.
 
 
 
 ## Assignments
+
+### SEP 13 
 1. Given two numbers, write C# method that returns true if sum of both 
 numbers is greater than 500. Otherwise returns false.
 
