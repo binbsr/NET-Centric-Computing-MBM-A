@@ -13,7 +13,7 @@ public class MethodTeacher
     //simple method with 2 argument and a return type
    public double  Sum (double firstNum ,double secondNum)
    {
-        DayOfWeek x;
+       // DayOfWeek x;
         return firstNum + secondNum;
  
     }

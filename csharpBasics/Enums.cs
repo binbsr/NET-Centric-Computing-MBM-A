@@ -1,39 +1,40 @@
 using System;
 
-namespace Name
+namespace EnumsAndProperties
 {
-    
-}
-
-enum DayWeek
-{
-    Sunday,
-    Monday,
-    Tuesday,
-    Wednesday,
-    Thursday,
-    Friday,
-    Saturday
-}
-
-
-internal class Demo
-{
-    public DayWeek DayWeek{ get; set; }
-
-
-    void PrintGreetings()
+    enum DayWeek
     {
-        if(DayWeek == DayWeek.Sunday )
+        Sunday,
+        Monday,
+        Tuesday,
+        Wednesady,
+        Thursady,
+        Friday,
+        Saturday
+    }
+
+    internal class Demo
+    {
+        
+        Person person;
+        public DayWeek DayOfWeek { get; set; }
+
+        void PrintGreetings()
         {
-            Console.WriteLine("Sunday is a good day");
-        }
-            else if (DayWeek == DayWeek.Saturday)
-        {
-            Console.WriteLine("Saturday is a holiday");
-        }
-        else{
-            Console.WriteLine("Fuck this day");
+
+            if (DayOfWeek == DayWeek.Saturday)
+            {
+                Console.WriteLine("Its a good saturday");
+            }
+            else if (DayOfWeek == DayWeek.Sunday)
+            {
+                Console.WriteLine("Its yet another weekend");
+            }
+            else
+            {
+                Console.WriteLine("Oh gosh, work day");
+            }
         }
     }
+
 }

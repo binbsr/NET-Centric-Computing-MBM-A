@@ -1,52 +1,49 @@
 using System;
-
 class IterationStatement
 {
-    static void Main9()
+    static void Main4()
     {
-
-        IterationStatement kk =new IterationStatement();
-        kk.LearnForLoop();
+        IterationStatement iterationStatement = new IterationStatement();
+        iterationStatement.LearnWhileLoop();
     }
-    void LearnForLoop()
+    void LearnForLoop() 
     {
-        for(int i=0;i<10;i++)
+        for  (int i = 0; i < 10; i++)
         {
-        Console.WriteLine("Iam beautiful.");
+            Console.WriteLine("I am beautiful");
         }
 
-        int[] numbers= {34,45,56,67};
-        foreach (int x in numbers)
+        int [] numbers = {34, 5, 6, 7, 78, 91 };
+
+        foreach(int x in numbers)
         {
-            if(x%2 == 0)
+            if (x % 2 == 0)
             {
-                Console.WriteLine($"({x} is even") ;
+                Console.WriteLine($"{x} is even.");
             }
             else
             {
-                {
-                    Console.WriteLine($"{x} is odd") ;
-                }
+               Console.WriteLine($"{x} is odd."); 
             }
         }
-
-
     }
+
     void LearnWhileLoop()
     {
-        char confirm ='Y';
-        while (confirm =='Y')
-            {
-            Console.WriteLine("I'm beautiful.");
-            Console.WriteLine("print one more?");
+        int confirm = 'Y';
+        while(confirm == 'Y')
+        {
+            Console.WriteLine("I am beautiful.");
+            Console.WriteLine("Print one more time?");
             confirm = Console.ReadKey().KeyChar;
-            }
-            do{
-            Console.WriteLine("I'm beautiful.");
-             Console.WriteLine("print one more?");
-            confirm =Console.ReadKey().KeyChar;
-            }while (confirm=='Y');
-            
         }
-    
+
+        do
+        {
+           Console.WriteLine("I am beautiful.");
+           Console.WriteLine("Print one more time?");
+           confirm = Console.ReadKey().KeyChar; 
+        } while(confirm == 'Y');
+    }
+
 }
