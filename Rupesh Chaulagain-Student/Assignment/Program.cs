@@ -2,11 +2,15 @@
 
 namespace Assignment
 {
-    class Program
+ class Executioner
+ {
+    static void Main()
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+        Logic logic=new Logic();
+        logic.SolveQuestion1();
+        logic.SolveQuestion2();
+        logic.SolveQuestion3();
+        
     }
+ }
 }
