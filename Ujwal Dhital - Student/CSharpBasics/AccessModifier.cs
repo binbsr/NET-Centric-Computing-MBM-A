@@ -1,13 +1,13 @@
-class AccessModifier
+public class AccessModifier
 {
     internal void DoSomething()
     {
 
     }
+
     public void DoAnotherThing()
     {
-        DoSomething();
-
+        DoSomething(); 
     }
 }
 
@@ -15,11 +15,10 @@ class ModifierDemo
 {
     void DoSomething()
     {
-        Person person =new Person();
-        person.Age=34;
-        person.Age=45;
-
+        Person person = new Person();
+        person.Age = 34;
+        person.Age = 45;
 
     }
-    
+
 }

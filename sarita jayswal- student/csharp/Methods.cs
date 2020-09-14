@@ -1,10 +1,8 @@
 using System;
 using EnumsAndProperties;
- 
-public class MethodTeacher
-{
+public class MethodTeacher{
     // simple\
-    static void Maind()
+    static void Main3()
     {
         MethodTeacher methodTeacher = new MethodTeacher();
         double sum = methodTeacher.Sum(234.56,32445.2);
@@ -13,7 +11,7 @@ public class MethodTeacher
     //simple method with 2 argument and a return type
    public double  Sum (double firstNum ,double secondNum)
    {
-       // DayOfWeek x;
+       DayWeek x ;
         return firstNum + secondNum;
  
     }
@@ -52,11 +50,11 @@ public class MethodTeacher
     {
         Console.Write($"Name:{name}[{age}],Address: {address}");
     }
-    //generic Mehods
-    public void   Sum <T> (T firstNum ,T secondNum){
  
-    }
- 
+   public void Sum<T>( T firstNum,T secondNum)
+   {
+       
+   }
 }
  
 public class MethodTester 
@@ -68,8 +66,8 @@ public class MethodTester
         (int min,int max)result = methodTeacher.FindMinMax(numbers);
         Console.WriteLine($"Minimun vlaue {result.min} and maximum value is{result.max}");
         //Named-argument
-        methodTeacher.PrintCustomerDetails(age:32,address:"Naikap",name:"Bishnu");
-        methodTeacher.Sum<float>(345.34f,4352.34f);
+        methodTeacher.PrintCustomerDetails(age:21,address:"Kalimati",name:"Sarita");
+        methodTeacher.Sum<float>(345.34f, 3456.34f);
     } 
  
  }
