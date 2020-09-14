@@ -1,23 +1,25 @@
-public class AccessModifier
-{
-    internal void DoSomething()
+namespace EnumsAndProperties {
+    public class AccessModifier
     {
+        internal void DoSomething()
+        {
 
+        }
+
+        public void DoAnotherThing()
+        {
+
+        }
     }
 
-    public void DoAnotherThing()
+    class ModifierDemo
     {
-
-    }
-}
-
-class ModifierDemo
-{
-    void DoSomething()
-    {
-        Person person = new Person ();
-        person.Age = 24;
-        person.Age = 45;
+        void DoSomething()
+        {
+            Person person = new Person();
+            person.Age = 24;
+            person.Age = 45;
+        }
     }
 }
 
