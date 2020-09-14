@@ -7,22 +7,12 @@ using System;
 
 public class MethodSum
     {
-        
-
-        
-      internal  bool num(int x){
+         internal  bool num(int x){
             if (x > 500){
                 return true;}
-
             else{
                 return false;
             }
-        
-
-        }
-
-        
-
-        
+         }
 
     }
