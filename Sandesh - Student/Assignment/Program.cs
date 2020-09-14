@@ -7,11 +7,11 @@ namespace Assignment
                 static void Main(string[] args)
         {
 
-            Method method1 = new Method();
+            Methods method1 = new Methods();
     //Sum of number
-            Console.WriteLine("Enter First Number");
+            Console.WriteLine("Enter pahilo Number");
             int num1= int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter Second Number");
+            Console.WriteLine("Enter dosro Number");
             int num2=  int.Parse(Console.ReadLine());
             bool result= method1.SumOfNum(num1,num2); //calling first method
             if (result)
