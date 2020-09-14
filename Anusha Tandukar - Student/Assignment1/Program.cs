@@ -4,9 +4,10 @@ namespace Assignment
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main123(string[] args)
         {
             Console.WriteLine("Hello World!");
         }
     }
 }
+
