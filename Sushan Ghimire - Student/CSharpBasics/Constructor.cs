@@ -2,16 +2,25 @@ namespace AllAboutClasses
 {
     public class Country
     {
-        public string Name { get; set;}
+        public string Name { get; set; }
+
         public int Population { get; set; }
 
-        public readonly double AREA = 45678.23;
+        public readonly double AREA = 45451.2;
+
+
+        //Default Constructor
         public Country()
         {
 
         }
 
-       
+        // Parametrized Constructor
+
+        public Country(string name)
+        {
+
+        }
 
         public Country(string name, int population, double area)
         {
@@ -19,20 +28,14 @@ namespace AllAboutClasses
             Population = population;
             AREA = area;
         }
-        // Parameterized Constructor
-
-        public Country(string name)
-        {
-            Name = name;
-        }
     }
+
     public class Demo
     {
         void DoSomething()
         {
             Country country1 = new Country();
             Country country2 = new Country("Nepal");
-
         }
     }
 }
