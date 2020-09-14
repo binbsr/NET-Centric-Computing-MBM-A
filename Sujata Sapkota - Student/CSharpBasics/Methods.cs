@@ -2,7 +2,7 @@ using System;
 using EnumsAndProperties;
 public class MethodTeacher{
     // simple\
-    static void Main()
+    static void Main4()
     {
         MethodTeacher methodTeacher = new MethodTeacher();
         double sum = methodTeacher.Sum(234.56,32445.2);

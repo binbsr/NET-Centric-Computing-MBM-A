@@ -1,7 +1,7 @@
 using System;
 class IterationStatement
 {
-    static void Main()
+    static void Main2()
    {
         IterationStatement iterationStatement = new IterationStatement();
         iterationStatement.LearnWhileLoop();

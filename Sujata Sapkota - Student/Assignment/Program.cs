@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace Assignments
+namespace Assignment
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main5(string[] args)
         {
             Console.WriteLine("Hello World!");
         }
