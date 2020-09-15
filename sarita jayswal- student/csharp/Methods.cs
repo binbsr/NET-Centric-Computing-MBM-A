@@ -2,7 +2,7 @@ using System;
 using EnumsAndProperties;
 public class MethodTeacher{
     // simple\
-    static void Main4()
+    static void Main3()
     {
         MethodTeacher methodTeacher = new MethodTeacher();
         double sum = methodTeacher.Sum(234.56,32445.2);
@@ -11,7 +11,7 @@ public class MethodTeacher{
     //simple method with 2 argument and a return type
    public double  Sum (double firstNum ,double secondNum)
    {
-       
+       DayWeek x ;
         return firstNum + secondNum;
  
     }
@@ -66,7 +66,7 @@ public class MethodTester
         (int min,int max)result = methodTeacher.FindMinMax(numbers);
         Console.WriteLine($"Minimun vlaue {result.min} and maximum value is{result.max}");
         //Named-argument
-        methodTeacher.PrintCustomerDetails(age:21,address:"Naikap",name:"Suzy");
+        methodTeacher.PrintCustomerDetails(age:21,address:"Kalimati",name:"Sarita");
         methodTeacher.Sum<float>(345.34f, 3456.34f);
     } 
  
