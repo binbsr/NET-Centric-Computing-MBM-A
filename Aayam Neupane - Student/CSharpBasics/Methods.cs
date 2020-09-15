@@ -68,7 +68,7 @@ public class MethodLearner
 }
 public class MethodTester
 {
-    static void Main()
+    static void Main23()
     {
         MethodLearner methodLearner = new MethodLearner();
         int[] numbers = { 3, 45, 78, 459, 65, 75, 15, 44 };
@@ -82,3 +82,4 @@ public class MethodTester
     }
 
 }
+
