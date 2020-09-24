@@ -12,46 +12,51 @@ public abstract class Shape
     public abstract double GetArea();
     public abstract double GetCircumference();
 
-    public virtual void Display(Shape shape)
+    public virtual void Display()
     {
-        Console.WriteLine($"Displaying Result for: {shape}");
+        Console.WriteLine($"Displaying Result for:");
     }
 
-    public override void Display()
-    {
-        Console.WriteLine($"Displaying results for Square with side {Side}:");
-        Console.WriteLine($"Area: {this.GetArea()} square unit: ");
-        Console.WriteLine($"Circumference: {this.GetCircumference()} unit: ");
-    }
 
-    public double GetDiagonal() => Math.Sqrt(2 *Sides*Sides)
+    //public double GetDiagonal() => Math.Sqrt(2 * Side * Side)
 }
 
 
-public class Square : Shape
+public class Square : Rectangle
 {
-    public Square(double side)
+    public Square(double side) : base(side, side)
     {
-        Side = side;
-    }
-    public double Side { get; set; }
-    public override double GetArea() => Side * Side;
 
-    public override double GetCircumference() => 4 * Side;
+    }
 }
 
-public class Rectangle : Shape
+public class Rectangle : Shape, IShapeWithSides
 {
-    public Rectangle(double length,double breadth)
+
+    public Rectangle(double length, double breadth)
     {
         Length = length;
         Breadth = breadth;
+
     }
+
     public double Length { get; set; }
     public double Breadth { get; set; }
     public override double GetArea() => Length * Breadth;
 
     public override double GetCircumference() => 2 * (Length + Breadth);
+
+    public override void Display()
+    {
+        if (Length == Breadth)
+            Console.WriteLine($"Displaying result for Square of side [{Length}]");
+        else
+            Console.WriteLine($"Displaying result for Rectangle of side [{Length} x {Breadth}]");
+        Console.WriteLine($"Area:{this.GetArea()}");
+        Console.WriteLine($"Perimeter:{this.GetCircumference()}");
+        Console.WriteLine($"Diagonal:{this.GetDiagonal()}");
+    }
+    public double GetDiagonal() => Math.Sqrt(Length * Length + Breadth * Breadth);
 }
 
 public class Circle : Shape
